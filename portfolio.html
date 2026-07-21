@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Andrew S. — Computer Science Portfolio & Resume">
+  <meta name="theme-color" content="#00B4C6">
+  <title>Andrew S. — CS Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/home.js" defer></script>
+  <style>
+    #about .glass-card:hover {
+      transform: none !important;
+      box-shadow: var(--shadow-glass) !important;
+      background: inherit !important;
+    }
+    #about .glass-card:hover::after {
+      opactiy: 0 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Animated background scene -->
+  <div class="scene" aria-hidden="true">
+    <div class="scene__blob scene__blob--1"></div>
+    <div class="scene__blob scene__blob--2"></div>
+    <div class="scene__blob scene__blob--3"></div>
+  </div>
+
+  <!-- Theme toggle -->
+  <button class="glass glass-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle colour scheme" title="Toggle light / dark mode">
+    <span class="icon-dark" aria-hidden="true">☀️</span>
+    <span class="icon-light" aria-hidden="true">🌙</span>
+  </button>
+
+  <!-- Toast region for notifications -->
+  <div class="glass-toast-region" id="toast-region" role="region" aria-label="Notifications" aria-live="polite"></div>
+
+  <main class="page">
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+      <span class="hero__kicker">Computer Science Portfolio</span>
+      <h1 class="hero__title">Andrew J. Schmidt<br><span class="hero__title--accent">Software Engineer</span></h1>
+      <p class="hero__sub"></p>
+      <div class="hero__cta">
+        <a href="#projects" class="glass glass-btn glass-btn--primary">View Projects</a>
+        <a href="#contact" class="glass glass-btn glass-btn--ghost">Get In Touch</a>
+      </div>
+      <div class="container stats">
+        <div class="glass stats__item glass-chip--violet">
+          <div class="stats__num">3+</div>
+          <div class="stats__desc">Years Experience</div>
+        </div>
+        <div class="glass stats__item glass-chip--aqua">
+          <div class="stats__num">Full Stack</div>
+          <div class="stats__desc">Web Development</div>
+        </div>
+        <div class="glass stats__item glass-chip--rose">
+          <div class="stats__num">AI/ML</div>
+          <div class="stats__desc">Researhcer</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">About Me:</h2>
+        </header>
+        <div class="glass glass-card glass--dark section__content" style="transform: none; box-shadow: none; background: inherit;">
+          <div class="about__grid">
+            <div class="about__text">
+              <p>Results-driven Software Engineer with 3 years of professional experience 
+                developing full-stack applications, leading CI/CD initiatives, and researching 
+                AI/ML solutions within a government IT environment. Experienced in designing and 
+                implementing scalable development workflows, including the ground-up creation of 
+                secure CI/CD pipelines incorporating automated unit testing, static code analysis, 
+                and version control best practices. Proficient in C#, Python, Java, JavaScript, and 
+                SQL, with a proven ability to rapidly learn new technologies and leverage AI to 
+                accelerate prototyping and feature development. Recognized for dependability, attention 
+                to detail, and collaborative leadership, with a passion for delivering high-quality, 
+                mission-focused software solutions. </p>  
+            </div>
+            <div> ----- </div>
+            <div class="about__skills">
+              <h3 class="about__skills-title">Core Competencies</h3>
+              <div class="glass-chip-group" role="list" aria-label="Technical skills">
+                <span class="glass glass-chip" role="listitem">C#</span>
+                <span class="glass glass-chip" role="listitem">Python</span>
+                <span class="glass glass-chip" role="listitem">Java</span>
+                <span class="glass glass-chip" role="listitem">JavaScript</span>
+                <span class="glass glass-chip" role="listitem">MySQL</span>
+                <span class="glass glass-chip" role="listitem">.NET</span>
+                <span class="glass glass-chip" role="listitem">Gitlab CI/CD</span>
+                <span class="glass glass-chip" role="listitem">Docker</span>
+                <span class="glass glass-chip" role="listitem">Git</span>
+                <span class="glass glass-chip" role="listitem">Scrum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE TIMELINE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Experience</h2>
+          <p class="section__sub">Where I've been and what I've built</p>
+        </header>
+        <div class="glass glass-card">
+          <ol class="glass-timeline" role="list" aria-label="Work experience timeline">
+            <li class="glass-timeline__item" role="listitem">
+              <time class="glass-timeline__date" datetime="2025-04">Apr 2025 — Present</time>
+              <div class="glass-timeline__content">
+                <h3 class="glass-timeline__title">Full Stack Web Developer</h3>
+                <p class="glass-timeline__company">NIWC Lant – HMS · Stafford, VA</p>
+                <ul class="glass-timeline__bullets">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+                <div class="glass-chip-group" role="list" aria-label="Technologies used">
+                  <span class="glass glass-chip" role="listitem">C#</span>
+                  <span class="glass glass-chip" role="listitem">.NET</span>
+                  <span class="glass glass-chip" role="listitem">JavaScript</span>
+                  <span class="glass glass-chip" role="listitem">SQL</span>
+                  <span class="glass glass-chip" role="listitem">GitLab CI/CD</span>
+                </div>
+              </div>
+            </li>
+            <li class="glass-timeline__item" role="listitem">
+              <time class="glass-timeline__date" datetime="2024-11">Nov 2024 — Present</time>
+              <div class="glass-timeline__content">
+                <h3 class="glass-timeline__title">Applied AI/ML Researcher</h3>
+                <p class="glass-timeline__company">NIWC Lant – NISE · Stafford, VA</p>
+                <ul class="glass-timeline__bullets">
+                  <li>1</li>
+                  <li>2</li>
+                </ul>
+                <div class="glass-chip-group" role="list" aria-label="Technologies used">
+                  <span class="glass glass-chip" role="listitem">Python</span>
+                  <span class="glass glass-chip" role="listitem">AI/ML</span>
+                  <span class="glass glass-chip" role="listitem">Research</span>
+                </div>
+              </div>
+            </li>
+            <li class="glass-timeline__item" role="listitem">
+              <time class="glass-timeline__date" datetime="2023-05">May 2023 — Apr 2025</time>
+              <div class="glass-timeline__content">
+                <h3 class="glass-timeline__title">Junior System Administrator</h3>
+                <p class="glass-timeline__company">NIWC Lant – TFSMS · Stafford, VA</p>
+                <ul class="glass-timeline__bullets">
+                  <li>1</li>
+                  <li>2</li>
+                </ul>
+                <div class="glass-chip-group" role="list" aria-label="Technologies used">
+                  <span class="glass glass-chip" role="listitem">Linux</span>
+                  <span class="glass glass-chip" role="listitem">Windows Server</span>
+                  <span class="glass glass-chip" role="listitem">Docker</span>
+                  <span class="glass glass-chip" role="listitem">Git</span>
+                </div>
+              </div>
+            </li>
+            <li class="glass-timeline__item" role="listitem">
+              <time class="glass-timeline__date" datetime="2022-06">Jun 2022 — Aug 2022</time>
+              <div class="glass-timeline__content">
+                <h3 class="glass-timeline__title">Intern</h3>
+                <p class="glass-timeline__company">NIWC Lant – eCRM · Remote</p>
+                <ul class="glass-timeline__bullets">
+                  <li>1</li>
+                  <li>2</li>
+                </ul>
+                <div class="glass-chip-group" role="list" aria-label="Technologies used">
+                  <span class="glass glass-chip" role="listitem">C#</span>
+                  <span class="glass glass-chip" role="listitem">.NET</span>
+                  <span class="glass glass-chip" role="listitem">SQL</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Selected Projects</h2>
+          <p class="section__sub">A few things I've built — open source and side projects</p>
+        </header>
+        <div class="glass glass-tabs" role="tablist" aria-label="Project categories">
+          <button class="glass glass-tab glass-tab--active" role="tab" aria-selected="true" aria-controls="panel-oss" id="tab-oss">Open Source</button>
+          <button class="glass glass-tab" role="tab" aria-selected="false" aria-controls="panel-side" id="tab-side" tabindex="-1">Side Projects</button>
+          <button class="glass glass-tab" role="tab" aria-selected="false" aria-controls="panel-work" id="tab-work" tabindex="-1">Work Highlights</button>
+        </div>
+        <div class="glass glass-tab-panels">
+          <!-- Open Source Panel -->
+          <div class="glass glass-tab-panel" role="tabpanel" id="panel-oss" aria-labelledby="tab-oss" hidden>
+            <div class="projects__grid">
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge">★ 2.3k</span>
+                  <a href="#" class="project-card__link" aria-label="View on GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.157-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.379.203 2.398.1 2.651.64.701 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .267.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  </a>
+                </div>
+                <h3 class="project-card__title">go-migrate</h3>
+                <p class="project-card__desc">Database migration tool for Go with support for PostgreSQL, MySQL, and SQLite. Used in production at 50+ companies.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Go</span>
+                  <span class="glass glass-chip">CLI</span>
+                  <span class="glass glass-chip">PostgreSQL</span>
+                </div>
+              </article>
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge">★ 890</span>
+                  <a href="#" class="project-card__link" aria-label="View on GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.157-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.379.203 2.398.1 2.651.64.701 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .267.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  </a>
+                </div>
+                <h3 class="project-card__title">react-glass-ui</h3>
+                <p class="project-card__desc">React component library implementing the Liquid Glass design system. 15+ accessible components, zero dependencies.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">React</span>
+                  <span class="glass glass-chip">TypeScript</span>
+                  <span class="glass glass-chip">CSS-in-JS</span>
+                </div>
+              </article>
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge">★ 340</span>
+                  <a href="#" class="project-card__link" aria-label="View on GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.157-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.379.203 2.398.1 2.651.64.701 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .267.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  </a>
+                </div>
+                <h3 class="project-card__title">kube-config-gen</h3>
+                <p class="project-card__desc">CLI tool generating production-ready Kubernetes manifests from a simple YAML spec. Supports Helm, Kustomize, and raw manifests.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Go</span>
+                  <span class="glass glass-chip">Kubernetes</span>
+                  <span class="glass glass-chip">CLI</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Side Projects Panel -->
+          <div class="glass glass-tab-panel" role="tabpanel" id="panel-side" aria-labelledby="tab-side" hidden>
+            <div class="projects__grid">
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge glass-badge--accent">Live</span>
+                  <a href="#" class="project-card__link" aria-label="View live demo" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+                <h3 class="project-card__title">DevMetrics</h3>
+                <p class="project-card__desc">Personal analytics dashboard for GitHub/GitLab activity. Tracks contributions, review velocity, and project health metrics.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Next.js</span>
+                  <span class="glass glass-chip">PostgreSQL</span>
+                  <span class="glass glass-chip">Tailwind</span>
+                </div>
+              </article>
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge">Live</span>
+                  <a href="#" class="project-card__link" aria-label="View live demo" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+                <h3 class="project-card__title">CLI-Resume</h3>
+                <p class="project-card__desc">Terminal-based interactive resume. Run <code>npx cli-resume</code> to view my experience, projects, and skills in your shell.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Node.js</span>
+                  <span class="glass glass-chip">Ink</span>
+                  <span class="glass glass-chip">TypeScript</span>
+                </div>
+              </article>
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge glass-badge--warn">WIP</span>
+                  <a href="#" class="project-card__link" aria-label="View on GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.157-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.379.203 2.398.1 2.651.64.701 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .267.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+                  </a>
+                </div>
+                <h3 class="project-card__title">distributed-lock</h3>
+                <p class="project-card__desc">Go library for distributed locking using Redis, etcd, and Consul backends. Implements Redlock algorithm with fencing tokens.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Go</span>
+                  <span class="glass glass-chip">Redis</span>
+                  <span class="glass glass-chip">Distributed Systems</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Work Highlights Panel -->
+          <div class="glass glass-tab-panel" role="tabpanel" id="panel-work" aria-labelledby="tab-work" hidden>
+            <div class="projects__grid">
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge glass-badge--success">Production</span>
+                </div>
+                <h3 class="project-card__title">Internal Developer Platform</h3>
+                <p class="project-card__desc">Self-service platform for 200+ engineers. Provision environments, manage secrets, view logs, and deploy services via UI or CLI.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Go</span>
+                  <span class="glass glass-chip">React</span>
+                  <span class="glass glass-chip">Kubernetes</span>
+                  <span class="glass glass-chip">GraphQL</span>
+                </div>
+              </article>
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge glass-badge--success">Production</span>
+                </div>
+                <h3 class="project-card__title">Real-time Collaboration Engine</h3>
+                <p class="project-card__desc">Operational Transform + CRDT hybrid system powering collaborative editing across 100k+ documents with sub-50ms latency.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">TypeScript</span>
+                  <span class="glass glass-chip">WebRTC</span>
+                  <span class="glass glass-chip">CRDT</span>
+                  <span class="glass glass-chip">Redis</span>
+                </div>
+              </article>
+              <article class="glass glass-card project-card">
+                <div class="project-card__header">
+                  <span class="glass glass-badge project-card__badge glass-badge--success">Production</span>
+                </div>
+                <h3 class="project-card__title">Observability Stack Migration</h3>
+                <p class="project-card__desc">Migrated from Datadog to self-hosted Grafana/Loki/Tempo stack, saving $180k/yr while improving query performance 3x.</p>
+                <div class="project-card__tags">
+                  <span class="glass glass-chip">Grafana</span>
+                  <span class="glass glass-chip">Loki</span>
+                  <span class="glass glass-chip">Tempo</span>
+                  <span class="glass glass-chip">Prometheus</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+    <section id="EDUCATION" class="section">
+      <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Education & Certifications</h2>
+      </div>
+      <div class="glass-accordion" id="accordion">
+
+        <div class="glass glass-accordion-item">
+          <button class="glass-accordion-trigger" aria-expanded="false" aria-controls="acc-1">
+            BS-Computer Science  |  University of Colorado, Colorado Springs
+            <span class="glass-accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="glass-accordion-body" id="acc-1" role="region">
+            <div class="glass-accordion-content">
+              Class of 2023, 3.78 GPA
+            </div>
+          </div>
+        </div>
+
+        <div class="glass glass-accordion-item">
+          <button class="glass-accordion-trigger" aria-expanded="false" aria-controls="acc-2">
+            Professional Scrum Master 1
+            <span class="glass-accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="glass-accordion-body" id="acc-2" role="region">
+            <div class="glass-accordion-content">
+              Scrum.Org | Issued 2024
+            </div>
+          </div>
+        </div>
+
+        <div class="glass glass-accordion-item">
+          <button class="glass-accordion-trigger" aria-expanded="false" aria-controls="acc-3">
+            SAFe Scrum Master 
+            <span class="glass-accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="glass-accordion-body" id="acc-3" role="region">
+            <div class="glass-accordion-content">
+              SAFe.com | Issued 2024
+            </div>
+          </div>
+        </div>
+
+        <div class="glass glass-accordion-item">
+          <button class="glass-accordion-trigger" aria-expanded="false" aria-controls="acc-4">
+            ITIL V4
+            <span class="glass-accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="glass-accordion-body" id="acc-4" role="region">
+            <div class="glass-accordion-content">
+              ITIL.com | Issued 2025
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    <!---
+    <!-- ===== WRITING & SPEAKING ===== --
+    <section id="writing" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Writing & Speaking</h2>
+          <p class="section__sub">Sharing knowledge through posts and talks</p>
+        </header>
+        <div class="glass glass-card">
+          <div class="writing__grid">
+            <article class="glass glass-card writing-card">
+              <time class="writing-card__date" datetime="2024-01">Jan 2024</time>
+              <h3 class="writing-card__title"><a href="#">Designing for Failure: Patterns for Resilient Distributed Systems</a></h3>
+              <p class="writing-card__venue">Blog Post · 12 min read</p>
+              <div class="glass glass-chip-group">
+                <span class="glass glass-chip">Distributed Systems</span>
+                <span class="glass glass-chip">Resilience</span>
+              </div>
+            </article>
+            <article class="glass glass-card writing-card">
+              <time class="writing-card__date" datetime="2023-10">Oct 2023</time>
+              <h3 class="writing-card__title"><a href="#">Kubernetes at Scale: Lessons from Managing 500+ Clusters</a></h3>
+              <p class="writing-card__venue">KubeCon NA 2023 · Talk (30 min)</p>
+              <div class="glass glass-chip-group">
+                <span class="glass glass-chip">Kubernetes</span>
+                <span class="glass glass-chip">Platform Engineering</span>
+              </div>
+            </article>
+            <article class="glass glass-card writing-card">
+              <time class="writing-card__date" datetime="2023-06">Jun 2023</time>
+              <h3 class="writing-card__title"><a href="#">Building a Developer Platform from Scratch</a></h3>
+              <p class="writing-card__venue">Blog Post · 18 min read</p>
+              <div class="glass glass-chip-group">
+                <span class="glass glass-chip">Platform Engineering</span>
+                <span class="glass glass-chip">DX</span>
+              </div>
+            </article>
+            <article class="glass glass-card writing-card">
+              <time class="writing-card__date" datetime="2022-11">Nov 2022</time>
+              <h3 class="writing-card__title"><a href="#">CRDTs vs Operational Transform: Choosing the Right Approach</a></h3>
+              <p class="writing-card__venue">Strange Loop 2022 · Talk (40 min)</p>
+              <div class="glass glass-chip-group">
+                <span class="glass glass-chip">CRDT</span>
+                <span class="glass glass-chip">Collaborative Editing</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__sub"></p>
+        </header>
+        <div class="glass glass-card contact-card">
+          <div class="glass glass-chip contact-email">Email: Email@example.com</div>
+          <div class="glass glass-chip">Github: Email@example.com</div>
+          <div class="glass glass-chip">LinkedIn: Email@example.com</div>
+        </div>
+        <div class="glass glass-card contact__card">
+          <div class="contact__info">
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">✉️</span>
+              <div>
+                <h3 class="contact__label">Email</h3>
+                <a href="mailto:andrew@example.com" class="contact__value">andrew@example.com</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">🐙</span>
+              <div>
+                <h3 class="contact__label">GitHub</h3>
+                <a href="https://github.com/AndrewS-hash" class="contact__value" target="_blank" rel="noopener">github.com/AndrewS-hash</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">💼</span>
+              <div>
+                <h3 class="contact__label">LinkedIn</h3>
+                <a href="https://linkedin.com/in/andrews" class="contact__value" target="_blank" rel="noopener">linkedin.com/in/andrews</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">📍</span>
+              <div>
+                <h3 class="contact__label">Location</h3>
+                <span class="contact__value">Fredericksburg, VA</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form glass" action="https://formspree.io/f/your-form-id" method="POST">
+            <h3 class="contact__form-title">Or send a message</h3>
+            <div class="glass glass-field">
+              <label for="contact-name" class="glass-field__label">Name</label>
+              <input type="text" id="contact-name" name="name" class="glass-field__input" placeholder="Your name" required>
+            </div>
+            <div class="glass glass-field">
+              <label for="contact-email" class="glass-field__label">Email</label>
+              <input type="email" id="contact-email" name="email" class="glass-field__input" placeholder="you@example.com" required>
+            </div>
+            <div class="glass glass-field">
+              <label for="contact-message" class="glass-field__label">Message</label>
+              <textarea id="contact-message" name="message" class="glass-field__input glass-field__input--textarea" placeholder="What's on your mind?" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="glass glass-btn glass-btn--primary contact__submit">Send Message</button>
+            <p class="contact__note" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copyright">© 2025 Andrew S. Built with <span class="footer__heart" aria-hidden="true">♥</span> using <a href="https://codepen.io/Margarita-the-solid/pen/NPRPBjd">Liquid Glass UI Kit.</a></p>
+        <nav class="footer__links" aria-label="Footer links">
+          <a href="https://github.com/AndrewS-hash" target="_blank" rel="noopener" class="glass glass-btn glass-btn--ghost">GitHub</a>
+          <a href="https://linkedin.com/in/andrews" target="_blank" rel="noopener" class="glass glass-btn glass-btn--ghost">LinkedIn</a>
+          <a href="mailto:andrew@example.com" class="glass glass-btn glass-btn--ghost">Email</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<script>
+  // Initialize tab panels for projects section
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.glass-tab');
+    const panels = document.querySelectorAll('.glass-tab-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('aria-controls');
+        tabs.forEach(t => {
+          t.setAttribute('aria-selected', 'false');
+          t.setAttribute('tabindex', '-1');
+          t.classList.remove('glass-tab--active');
+        });
+        panels.forEach(p => {
+          p.hidden = true;
+          p.removeAttribute('aria-labelledby');
+        });
+        tab.setAttribute('aria-selected', 'true');
+        tab.removeAttribute('tabindex');
+        tab.classList.add('glass-tab--active');
+        const panel = document.getElementById(target);
+        panel.hidden = false;
+        panel.setAttribute('aria-labelledby', tab.id);
+      });
+    });
+
+    // Accordion toggle icons
+    document.querySelectorAll('.glass-accordion__trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const icon = trigger.querySelector('.glass-accordion__icon');
+        const expanded = trigger.getAttribute('aria-expanded') === 'true';
+        if (icon) icon.textContent = expanded ? '▸' : '▾';
+      });
+    });
+
+    // Contact form handling
+    const form = document.querySelector('.contact__form');
+    const note = document.querySelector('.contact__note');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('.contact__submit');
+        const original = btn.textContent;
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            note.textContent = 'Thanks! I\'ll get back to you soon.';
+            note.style.color = 'var(--color-success)';
+            form.reset();
+          } else {
+            throw new Error('Submission failed');
+          }
+        } catch {
+          note.textContent = 'Something went wrong. Please email me directly.';
+          note.style.color = 'var(--color-error)';
+        } finally {
+          btn.textContent = original;
+          btn.disabled = false;
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>
