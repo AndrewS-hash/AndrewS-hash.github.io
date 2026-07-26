@@ -1,0 +1,496 @@
+/* ==========================================================================
+   ODYSSEUS PORTFOLIO — Custom styles for portfolio sections
+   Extends OdysseusStyle.css with layouts for about, experience, projects,
+   education, and contact.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Section Blocks
+   -------------------------------------------------------------------------- */
+.section-block {
+  margin-top: 26px;
+  padding: clamp(26px, 5vw, 48px);
+}
+
+.section-block .section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.section-block .section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3.6rem);
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+/* --------------------------------------------------------------------------
+   About
+   -------------------------------------------------------------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-text {
+  max-width: 900px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-subheading {
+  margin: 32px 0 14px;
+  font-family: "DM Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-left .about-subheading {
+  margin-top: 32px;
+}
+
+.about-right .about-subheading {
+  margin-top: 0;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  width: 3px;
+  background: var(--ink);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 2px;
+  width: 17px;
+  height: 17px;
+  background: var(--yellow);
+  border: 3px solid var(--ink);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.timeline-date {
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.timeline-title {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.timeline-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+/* --------------------------------------------------------------------------
+   Experience
+   -------------------------------------------------------------------------- */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.experience-card {
+  position: relative;
+  min-height: 280px;
+  padding: 28px;
+  overflow: hidden;
+  border: var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.experience-card h3 {
+  margin: 34px 0 6px;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.experience-date {
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.experience-company {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.experience-bullets {
+  margin: 14px 0;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+.experience-bullets li {
+  margin-bottom: 4px;
+}
+
+.experience-card .skill-chips {
+  margin-top: 14px;
+}
+
+.experience-card .filter-button {
+  font-size: 0.7rem;
+  padding: 6px 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Projects
+   -------------------------------------------------------------------------- */
+.projects-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card {
+  position: relative;
+  min-height: 280px;
+  padding: 30px;
+  overflow: hidden;
+  border: var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  transition: transform 170ms ease, box-shadow 170ms ease;
+}
+
+.project-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.project-card h3 {
+  margin: 14px 0 10px;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.project-card p:last-of-type {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.project-card .skill-chips {
+  margin-top: 16px;
+}
+
+.project-card .filter-button {
+  font-size: 0.7rem;
+  padding: 6px 10px;
+}
+
+.project-badge {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--white);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
+
+.project-badge--accent {
+  background: var(--green);
+}
+
+.project-badge--success {
+  background: var(--blue);
+}
+
+.project-badge--warn {
+  background: var(--orange);
+}
+
+.project-card-hidden {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Education
+   -------------------------------------------------------------------------- */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.education-item {
+  padding: 20px;
+  border: 2px solid rgba(23, 23, 23, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.education-item h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+}
+
+.education-item p {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* --------------------------------------------------------------------------
+   Postmortem (override hero h1 span to avoid conflict with portfolio hero)
+   -------------------------------------------------------------------------- */
+#postmortem .section-heading h2 span {
+  display: inline;
+  color: #d75d35;
+  -webkit-text-stroke: 1px var(--ink);
+}
+
+#postmortem .hero-description {
+  max-width: 680px;
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.audit-meter-label {
+  margin-top: 8px;
+  text-align: right;
+  font-family: "DM Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Contact
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.contact-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.contact-value {
+  margin: 2px 0 0;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.contact-value:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contact-form h3 {
+  margin: 0 0 18px;
+  font-size: 1.4rem;
+  letter-spacing: -0.04em;
+}
+
+.form-field {
+  margin-bottom: 14px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: var(--border);
+  border-radius: 12px;
+  background: var(--white);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.92rem;
+  color: var(--ink);
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  box-shadow: var(--small-shadow);
+  transform: translate(-1px, -1px);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-submit {
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-note {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Footer additions
+   -------------------------------------------------------------------------- */
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links .secondary-button {
+  min-height: auto;
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.footer a {
+  color: var(--ink);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 1050px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-filters {
+    justify-content: flex-start;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer > p {
+    text-align: left;
+  }
+}
