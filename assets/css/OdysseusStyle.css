@@ -143,6 +143,8 @@ button:focus-visible {
   cursor: pointer;
   border: var(--border);
   font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
   transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
 }
 
@@ -163,6 +165,8 @@ button:focus-visible {
 }
 
 .secondary-button {
+  display: inline-flex;
+  align-items: center;
   background: var(--white);
 }
 
